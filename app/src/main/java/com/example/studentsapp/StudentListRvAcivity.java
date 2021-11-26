@@ -1,5 +1,6 @@
 package com.example.studentsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -38,7 +39,13 @@ public class StudentListRvAcivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                Log.d("TAG","row was clicked " + position);
+                // Create the text message with a string
+                Intent sendIntent = new Intent(StudentListRvAcivity.this, MainActivity.class);
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, position);
+                // Start the activity
+                startActivity(sendIntent);
             }
         });
     }
