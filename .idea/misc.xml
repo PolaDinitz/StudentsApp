@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Pola/AndroidStudioProjects/StudentsApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Pola/AndroidStudioProjects/StudentsApp/app/src/main/res/layout/activity_student_list.xml" value="0.1" />
+        <entry key="..\:/Users/Pola/AndroidStudioProjects/StudentsApp/app/src/main/res/layout/activity_student_list.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Pola/AndroidStudioProjects/StudentsApp/app/src/main/res/layout/activity_student_list_rv_acivity.xml" value="0.2534775888717156" />
+        <entry key="..\:/Users/Pola/AndroidStudioProjects/StudentsApp/app/src/main/res/layout/student_list_row.xml" value="0.22" />
       </map>
     </option>
   </component>
