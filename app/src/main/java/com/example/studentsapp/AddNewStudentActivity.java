@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity  {
+public class AddNewStudentActivity extends AppCompatActivity  {
     EditText nameEt;
     EditText idEt;
     CheckBox cb;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_student);
 
         nameEt = findViewById(R.id.main_name_et);
         idEt = findViewById(R.id.main_id_et);

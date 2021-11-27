@@ -7,7 +7,7 @@ public class Model {
     public static final Model instance = new Model();
 
     private Model(){
-        for(int i=0;i<100;i++){
+        for(int i=0;i<10;i++){
             com.example.studentsapp.model.Student s = new com.example.studentsapp.model.Student("name",""+i,false);
             data.add(s);
         }
@@ -22,4 +22,6 @@ public class Model {
     public void addStudent(com.example.studentsapp.model.Student student){
         data.add(student);
     }
+
+    public void deleteStudent(int position){ data.remove(position); }
 }

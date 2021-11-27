@@ -40,10 +40,11 @@ public class StudentListRvAcivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position) {
                 // Create the text message with a string
-                Intent sendIntent = new Intent(StudentListRvAcivity.this, MainActivity.class);
+                Intent sendIntent = new Intent(StudentListRvAcivity.this, StudentDetailsActivity.class);
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.setType("text/plain");
-                sendIntent.putExtra(Intent.EXTRA_TEXT, position);
+                Log.d("MAIN","row was clicked " + position);
+                sendIntent.putExtra("EXTRA_POSITION", String.valueOf(position));
                 // Start the activity
                 startActivity(sendIntent);
             }
