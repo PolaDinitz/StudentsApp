@@ -102,4 +102,9 @@ public class StudentListRvAcivity extends AppCompatActivity {
             return data.size();
         }
     }
+
+    public void onAddStudentClick(View view) {
+        Intent createStudentActivityIntent = new Intent(StudentListRvAcivity.this, AddNewStudentActivity.class);
+        startActivity(createStudentActivityIntent);
+    }
 }
